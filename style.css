@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg-container {
+  height: 100vh;
+  background-image: linear-gradient(pink, rgb(112, 141, 185));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.form-container {
+  width: 80%;
+  max-width: 500px;
+  min-width: 300px;
+  margin: auto;
+  background-color: transparent;
+  padding: 50px;
+  border-radius: 4px;
+  /* opacity: 0.5; */
+  background-color: lightgray;
+}
+
+.form-container h1 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.input-container {
+  margin-bottom: 10px;
+}
+
+.input-container label {
+  font-size: 18px;
+  /* margin-bottom: 8px; */
+}
+
+.input-container input {
+  width: 100%;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  height: 35px;
+  padding: 8px;
+  margin-top: 8px;
+}
+
+.input-container textarea {
+  width: 100%;
+  height: 60px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  margin-top: 8px;
+  padding: 8px;
+}
+
+.adhar-container {
+  width: 100%;
+  max-width: 450px;
+  background-color: #fff;
+  padding: 24px;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  border-radius: 4px;
+}
+
+.img-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.details-section {
+  font-weight: 600;
+}
+
+.lion-img {
+  width: 30px;
+}
+
+.gov-img {
+  width: 180px;
+}
+
+.adhar-img {
+  width: 40px;
+}
+
+.inner-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-img {
+  width: 80px;
+}
+
+.qr-img {
+  width: 60px;
+}
+
+.btn {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(12, 88, 250);
+  color: #fff;
+  border: none;
+  margin-top: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-img {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  background-color: lightgray;
+  padding: 8px;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .adhar-container {
+    max-width: 350px;
+  }
+  .details-section {
+    font-size: 12px;
+  }
+  .profile-img {
+    width: 50px;
+  }
+  .qr-img {
+    width: 40px;
+  }
+}
